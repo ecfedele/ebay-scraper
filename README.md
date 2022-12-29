@@ -19,6 +19,28 @@ Beyond the legal and ethical disclaimers above, it should be noted that `ebay-sc
 
 ## Usage
 
+First, create the options argument to pass through to `Query`:
+
+```
+var options = new RunOptions() {
+    ChromePath    = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    TimeoutLength = 1000,
+    CsvOut        = true,
+    CsvFilename   = "listing_data.csv"
+};
+```
+
+Then, the `Query` object can be instantiated and the various methods used to operate on it in LINQ-esque fashion:
+
+```
+Query query = new Query(options)
+            .AddKeywords("desktop computer")
+            .SetMinimumPrice(50.0m)
+            .SetMaximumPrice(500.0m)
+            .SaleFormat(ListingFormat.BuyItNow);
+var response = await query.Execute();
+```
+
 ## Notes
 
 <ol>
