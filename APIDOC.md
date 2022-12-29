@@ -10,7 +10,7 @@ There are three enumeration types in `ebay-scraper`: [`ListingCondition`](#listi
 
 Provides an enumeration type used to indicate to the [`Query`](#query) object the state (physical condition) of the items to be filtered for.
 
-Attributes: `[Flags]`
+Attributes: [`[Flags]`](https://learn.microsoft.com/en-us/dotnet/api/system.flagsattribute?view=net-6.0)
 
 Members:
 1. `New`: Item is new or otherwise unused
