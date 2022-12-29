@@ -41,6 +41,8 @@ Query query = new Query(options)
 var response = await query.Execute();
 ```
 
+The `response` variable should be returned of type [`List<Listing>`](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-6.0); further information may be found in the [API documentation](https://github.com/ecfedele/ebay-scraper/blob/main/APIDOC.md).
+
 ## Notes
 
 <ol>
