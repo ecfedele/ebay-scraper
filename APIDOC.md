@@ -8,7 +8,7 @@ There are three enumeration types in `ebay-scraper`: `ListingCondition`, `Listin
 
 ### `ListingCondition`
 
-Provides an enumeration type used to indicate to the `Query` object the state (physical condition) of the items to be filtered for.
+Provides an enumeration type used to indicate to the [`Query`](#query) object the state (physical condition) of the items to be filtered for.
 
 Attributes: `[Flags]`
 
