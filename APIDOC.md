@@ -4,7 +4,7 @@ This document is intended to serve as a more detailed reference of the types and
 
 ## Enumerations
 
-There are three enumeration types in `ebay-scraper`: `ListingCondition`, `ListingFormat`, and `ListingVisibility`.
+There are three enumeration types in `ebay-scraper`: [`ListingCondition`](#listingcondition), [`ListingFormat`](#listingformat), and [`ListingVisibility`](#listingvisibility). These enumeration types are mainly intended to clean up and shorten the argument interfaces for methods of the [`Query`](#query) class, although they also find use in the [`Listing`](#listing) class as well.
 
 ### `ListingCondition`
 
